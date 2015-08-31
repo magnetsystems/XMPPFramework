@@ -11,7 +11,7 @@
 #import "XMPPvCardAvatarModule.h"
 #import "XMPPvCardCoreDataStorage.h"
 
-#import "DDLog.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 #import "DDTTYLogger.h"
 
 #import <CFNetwork/CFNetwork.h>

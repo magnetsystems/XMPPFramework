@@ -3,7 +3,7 @@
 #import "SettingsViewController.h"
 
 #import "XMPPFramework.h"
-#import "DDLog.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
 
 // Log levels: off, error, warn, info, verbose
 #if DEBUG
