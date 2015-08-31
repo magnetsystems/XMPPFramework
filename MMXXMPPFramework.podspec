@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MMXXMPPFramework'
-  s.version = '3.6.11'
+  s.version = '3.6.12'
   # s.platform = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.summary = 'An XMPP Framework in Objective-C for the Mac / iOS development community.'
   s.homepage = 'https://github.com/robbiehanson/XMPPFramework'
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
-  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => '3.6.11'}
+  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => '3.6.12'}
   s.resources = [ '**/*.{xcdatamodel,xcdatamodeld}']
   s.module_map = 'modulemappath/module.modulemap'
   
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(SDKROOT)/usr/include/libiconv',
       'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/MMXXMPPFramework/Vendor/libidn"'}
 
-      core.dependency 'CocoaLumberjack','~>1.9'
+      core.dependency 'CocoaLumberjack','~>2.0'
       core.dependency 'CocoaAsyncSocket','~>7.4.1'
     end
 
