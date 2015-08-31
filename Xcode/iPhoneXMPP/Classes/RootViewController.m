@@ -7,9 +7,9 @@
 
 // Log levels: off, error, warn, info, verbose
 #if DEBUG
-  static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+  static const int ddLogLevel = DDLogLevelVerbose;
 #else
-  static const int ddLogLevel = LOG_LEVEL_INFO;
+static const int ddLogLevel = DDLogLevelInfo;
 #endif
 
 @implementation RootViewController

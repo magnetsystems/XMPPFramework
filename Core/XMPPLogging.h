@@ -127,7 +127,6 @@
 #define XMPP_LOG_C_MAYBE(async, lvl, flg, ctx, frmt, ...) \
     do{ if(XMPP_LOGGING_ENABLED) LOG_MAYBE(async, lvl, flg, ctx, __FUNCTION__, frmt, ##__VA_ARGS__); } while(0)
 
-
 #define XMPPLogError(frmt, ...)    XMPP_LOG_OBJC_MAYBE(XMPP_LOG_ASYNC_ERROR,   xmppLogLevel, XMPP_LOG_FLAG_ERROR,  \
                                                   XMPP_LOG_CONTEXT, frmt, ##__VA_ARGS__)
 

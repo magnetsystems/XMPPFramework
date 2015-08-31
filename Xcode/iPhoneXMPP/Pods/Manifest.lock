@@ -1,0 +1,25 @@
+PODS:
+  - CocoaAsyncSocket (7.4.2)
+  - CocoaLumberjack (2.0.1):
+    - CocoaLumberjack/Default (= 2.0.1)
+    - CocoaLumberjack/Extensions (= 2.0.1)
+  - CocoaLumberjack/Core (2.0.1)
+  - CocoaLumberjack/Default (2.0.1):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.1):
+    - CocoaLumberjack/Default
+  - MDMCoreData/MDMCoreDataCore (1.5.0)
+  - MDMCoreData/MDMPersistenceController (1.5.0):
+    - MDMCoreData/MDMCoreDataCore
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.4.1)
+  - CocoaLumberjack (~> 2.0)
+  - MDMCoreData/MDMPersistenceController (~> 1.4)
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: f5783bdedd232d91b89769bc4b5a1580aed518ad
+  CocoaLumberjack: 019d1361244274a6138c788c6cb80baabc13fb8f
+  MDMCoreData: 402f754cda90865026a209243f1667824e775649
+
+COCOAPODS: 0.38.2

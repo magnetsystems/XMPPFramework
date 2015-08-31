@@ -18,9 +18,9 @@
 
 // Log levels: off, error, warn, info, verbose
 #if DEBUG
-  static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+  static const int ddLogLevel = DDLogLevelVerbose;
 #else
-  static const int ddLogLevel = LOG_LEVEL_INFO;
+static const int ddLogLevel = DDLogLevelInfo;
 #endif
 
 
@@ -58,7 +58,7 @@
 {
 	// Configure logging framework
 	
-	[DDLog addLogger:[DDTTYLogger sharedInstance] withLogLevel:XMPP_LOG_FLAG_SEND_RECV];
+	[DDLog addLogger:[DDTTYLogger sharedInstance] withLevel:XMPP_LOG_FLAG_SEND_RECV];
 
   // Setup the XMPP stream
   
