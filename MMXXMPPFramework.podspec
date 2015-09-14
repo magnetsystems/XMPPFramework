@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
     core.vendored_libraries = 'Vendor/libidn/libidn.a'
     core.libraries = 'xml2','resolv','iconv'
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(SDKROOT)/usr/include/libiconv',
-      'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/MMXXMPPFramework/Vendor/libidn"'}
+      'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/MMXXMPPFramework/Vendor/libidn"','ENABLE_BITCODE' => 'NO'}
 
       core.dependency 'CocoaLumberjack','~>1.9'
       core.dependency 'CocoaAsyncSocket','~>7.4.1'
