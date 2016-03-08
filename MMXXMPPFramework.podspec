@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MMXXMPPFramework'
-  s.version = '3.6.13'
+  s.version = '3.6.14'
   # s.platform = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.summary = 'An XMPP Framework in Objective-C for the Mac / iOS development community.'
   s.homepage = 'https://github.com/robbiehanson/XMPPFramework'
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
-  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => '3.6.13'}
+  s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :tag => "#{s.version}"}
   s.resources = [ '**/*.{xcdatamodel,xcdatamodeld}']
   s.module_map = 'modulemappath/module.modulemap'
-  
+
   s.description = 'XMPPFramework provides a core implementation of RFC-3920 (the xmpp standard), along with
   the tools needed to read & write XML. It comes with multiple popular extensions (XEPs),
   all built atop a modular architecture, allowing you to plug-in any code needed for the job.
@@ -39,7 +39,7 @@ Pod::Spec.new do |s|
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(SDKROOT)/usr/include/libiconv',
       'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/MMXXMPPFramework/Vendor/libidn"','ENABLE_BITCODE' => 'NO'}
 
-      core.dependency 'CocoaLumberjack','~>2.0'
+      core.dependency 'CocoaLumberjack','~>2.2'
       core.dependency 'CocoaAsyncSocket','~>7.4.1'
     end
 
@@ -60,6 +60,7 @@ Pod::Spec.new do |s|
       r.dependency 'MMXXMPPFramework/XEP-0203'
     end
     s.xmpp_extension 'Reconnect'
+    s.xmpp_extension 'XEP-0016'
     s.xmpp_extension 'XEP-0060'
     s.xmpp_extension 'XEP-0082'
     s.xmpp_extension 'XEP-0106'
