@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'MMXXMPPFramework'
-  s.version = '3.6.14'
+  s.version = '3.6.16'
   # s.platform = :ios, '6.0'
   s.ios.deployment_target = '6.0'
   s.osx.deployment_target = '10.8'
