@@ -15,7 +15,9 @@
  * permissions and limitations under the License.
  */
 
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 #import <UIKit/UIKit.h>
+#endif
 
 #import "XMPPFramework.h"
 #import "XMPP.h"
@@ -57,9 +59,7 @@
 #import "DDXMLDocument.h"
 #import "DDXMLElement.h"
 #import "DDXMLNode.h"
-#import "XMPPCoreDataStorage.h"
 #import "XMPPCoreDataStorageProtected.h"
-#import "XMPPReconnect.h"
 #import "XMPPGroupCoreDataStorageObject.h"
 #import "XMPPResourceCoreDataStorageObject.h"
 #import "XMPPRosterCoreDataStorage.h"
