@@ -59,7 +59,6 @@
 #import "DDXMLDocument.h"
 #import "DDXMLElement.h"
 #import "DDXMLNode.h"
-#import "XMPPCoreDataStorageProtected.h"
 #import "XMPPGroupCoreDataStorageObject.h"
 #import "XMPPResourceCoreDataStorageObject.h"
 #import "XMPPRosterCoreDataStorage.h"
