@@ -36,6 +36,7 @@ Pod::Spec.new do |s|
     core.private_header_files = 'Vendor/KissXML/Private/**/*.h'
     core.vendored_libraries = 'Vendor/libidn/libidn.a'
     core.libraries = 'xml2','resolv','iconv'
+    core.frameworks = 'CoreData', 'SystemConfiguration', 'CoreLocation'
     core.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libresolv $(SDKROOT)/usr/include/libiconv',
       'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/MMXXMPPFramework/Vendor/libidn"','ENABLE_BITCODE' => 'NO'}
 
