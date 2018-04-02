@@ -10,7 +10,6 @@ Pod::Spec.new do |s|
   s.author = { 'Robbie Hanson' => 'robbiehanson@deusty.com' }
   s.source = { :git => 'https://github.com/magnetsystems/XMPPFramework.git', :branch => "release-3.6.16"}
   s.resources = [ '**/*.{xcdatamodel,xcdatamodeld}']
-  s.module_map = 'modulemappath/module.modulemap'
 
   s.description = 'XMPPFramework provides a core implementation of RFC-3920 (the xmpp standard), along with
   the tools needed to read & write XML. It comes with multiple popular extensions (XEPs),
@@ -33,7 +32,7 @@ Pod::Spec.new do |s|
   END
 
   s.subspec 'Core' do |core|
-    core.source_files = ['MMXXMPPFramework-umbrella.h', 'XMPPFramework.h', 'Core/**/*.{h,m}','Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}', 'Utilities/**/*.{h,m}', 'Vendor/KissXML/**/*.{h,m}']
+    core.source_files = ['XMPPFramework.h', 'Core/**/*.{h,m}','Vendor/libidn/*.h', 'Authentication/**/*.{h,m}', 'Categories/**/*.{h,m}', 'Utilities/**/*.{h,m}', 'Vendor/KissXML/**/*.{h,m}']
     core.private_header_files = 'Vendor/KissXML/Private/**/*.h'
     core.vendored_libraries = 'Vendor/libidn/libidn.a'
     core.libraries = 'xml2','resolv','iconv'
